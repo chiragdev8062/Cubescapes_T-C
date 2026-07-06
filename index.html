@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Terms of Service for Cubescapes!" />
+  <title>Cubescapes! - Terms of Service</title>
+  <style>
+    :root {
+      --bg: #f6f8ff;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --primary: #4f46e5;
+      --primary-dark: #312e81;
+      --border: #e5e7eb;
+      --soft: #eef2ff;
+      --warning-bg: #fff7ed;
+      --warning-border: #fed7aa;
+      --warning-text: #7c2d12;
+      --shadow: 0 18px 45px rgba(31, 41, 55, 0.10);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at top left, #dbeafe 0%, transparent 34%),
+        radial-gradient(circle at top right, #ede9fe 0%, transparent 30%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    header {
+      padding: 58px 20px 36px;
+      text-align: center;
+      background: linear-gradient(135deg, #4f46e5, #7c3aed);
+      color: #ffffff;
+    }
+
+    header h1 {
+      margin: 0 0 12px;
+      font-size: clamp(32px, 5vw, 56px);
+      line-height: 1.1;
+      letter-spacing: -0.045em;
+    }
+
+    header p {
+      margin: 8px auto;
+      max-width: 820px;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 16px;
+    }
+
+    .badges {
+      margin-top: 20px;
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 13px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: #ffffff;
+      font-size: 14px;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 12px 20px;
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--primary-dark);
+      background: var(--soft);
+      padding: 10px 16px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 14px;
+      border: 1px solid transparent;
+      transition: all 0.2s ease;
+    }
+
+    nav a:hover {
+      background: var(--primary);
+      color: #ffffff;
+      transform: translateY(-1px);
+    }
+
+    main {
+      max-width: 1120px;
+      margin: 34px auto;
+      padding: 0 20px 56px;
+    }
+
+    .notice {
+      background: var(--warning-bg);
+      border: 1px solid var(--warning-border);
+      color: var(--warning-text);
+      padding: 16px 18px;
+      border-radius: 18px;
+      margin-bottom: 22px;
+      box-shadow: 0 8px 20px rgba(124, 45, 18, 0.06);
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: clamp(22px, 4vw, 42px);
+      margin-bottom: 26px;
+      box-shadow: var(--shadow);
+    }
+
+    h2 {
+      margin: 0 0 18px;
+      color: var(--primary-dark);
+      font-size: clamp(25px, 3vw, 36px);
+      letter-spacing: -0.03em;
+    }
+
+    h3 {
+      margin-top: 30px;
+      margin-bottom: 8px;
+      color: #111827;
+      font-size: 20px;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    ul {
+      padding-left: 22px;
+      margin: 10px 0;
+    }
+
+    li {
+      margin: 7px 0;
+    }
+
+    a {
+      color: var(--primary);
+      word-break: break-word;
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .meta-item {
+      background: #f9fafb;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 14px 16px;
+    }
+
+    .meta-item strong {
+      display: block;
+      color: #111827;
+      margin-bottom: 2px;
+    }
+
+    .back-to-top {
+      display: inline-block;
+      margin-top: 18px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 28px 20px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      background: #ffffff;
+      font-size: 14px;
+    }
+
+    @media (max-width: 720px) {
+      header {
+        padding: 44px 16px 28px;
+      }
+
+      main {
+        margin-top: 22px;
+        padding-left: 14px;
+        padding-right: 14px;
+      }
+
+      .card {
+        border-radius: 18px;
+      }
+
+      .meta-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-inner {
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+      }
+
+      nav a {
+        white-space: nowrap;
+      }
+    }
+  
+    .page-link {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 11px 16px;
+      border-radius: 999px;
+      background: var(--primary);
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .page-link:hover {
+      background: var(--primary-dark);
+    }
+</style>
+</head>
+<body>
+  <header id="top">
+<p>Terms of Service</p>
+    <p>This page explains important information about using Cubescapes!.</p>
+  </header>
+
+  <nav aria-label="Page navigation">
+    <div class="nav-inner">
+      <a href="index.html">Terms of Service</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="card" id="terms">
+
+      <h2>Terms of Service</h2>
+
+      <p>
+        Please read these Terms of Service carefully before using Cubescapes!, including any related mobile game, application, website, support channel, feature, content, or service connected with the game, collectively referred to as the “Services”.
+      </p>
+
+      <p>
+        These Terms of Service are a legally binding agreement between you and Chirag Sorathiya, an individual developer and publisher of Cubescapes!. By downloading, installing, accessing, or using the Services, you agree to be bound by these Terms. If you do not agree with these Terms, you must stop using the Services.
+      </p>
+
+      <h3>1. Terms and Binding Effect</h3>
+      <p>
+        By using the Services, you agree to follow these Terms as they may be updated from time to time. Updated Terms may be posted on this page or made available through the Services. It is your responsibility to review these Terms periodically. Continued use of the Services after changes are posted means you accept the updated Terms.
+      </p>
+      <p>
+        If you breach these Terms, your access to the Services may be limited, suspended, or terminated.
+      </p>
+
+      <h3>2. Privacy</h3>
+      <p>
+        To provide and improve the Services, certain information may be collected or processed as described in the Privacy Policy below. Please review the Privacy Policy to understand what information may be processed, how it may be used, and what choices you may have.
+      </p>
+
+      <h3>3. Age of Users</h3>
+      <p>
+        If you are under the age required by applicable law to use the Services on your own, you may use the Services only with permission from a parent or legal guardian. Parents and guardians are encouraged to monitor the online activity and game usage of children.
+      </p>
+      <p>
+        The Services are not intended to knowingly collect personal information from children under 13 without appropriate parental consent where required by law. If a parent or guardian believes that a child has provided personal information, they may contact the developer using the email listed below.
+      </p>
+
+      <h3>4. Description of Services</h3>
+      <p>
+        Cubescapes! is a mobile game provided for personal, non-commercial entertainment. The Services may include gameplay features, virtual items, rewards, events, advertisements, analytics, support features, updates, and other game-related content.
+      </p>
+
+      <h3>5. Your Obligations</h3>
+      <p>By using the Services, you agree that you will not:</p>
+      <ul>
+        <li>Access or attempt to access the Services in an unauthorized manner.</li>
+        <li>Use the Services to violate any applicable law, regulation, or third-party right.</li>
+        <li>Harass, threaten, abuse, defame, or harm other users.</li>
+        <li>Use hateful, obscene, offensive, abusive, or unlawful language or content.</li>
+        <li>Cheat, hack, exploit, attack, overload, disrupt, or interfere with the Services or any server.</li>
+        <li>Use bots, automation tools, mods, hacks, cheats, scripts, or unauthorized third-party software.</li>
+        <li>Transmit viruses, malware, harmful code, worms, traps, or other destructive files.</li>
+        <li>Collect, store, or process personal data about other users without permission.</li>
+        <li>Advertise, solicit, spam, or promote unrelated products or services through the Services.</li>
+        <li>Use another person’s payment method without permission.</li>
+        <li>Copy, misuse, or misrepresent the game name, artwork, content, or branding.</li>
+      </ul>
+
+      <h3>6. Virtual Items and Purchases</h3>
+      <p>
+        The Services may offer virtual currency, coins, boosters, rewards, in-game items, premium content, or other digital items, collectively referred to as “Virtual Items”. Virtual Items are provided only for personal, non-commercial entertainment within the Services.
+      </p>
+      <p>
+        You receive a limited, revocable, non-transferable, non-sublicensable license to use Virtual Items inside the Services. You do not own Virtual Items, and you do not receive any property interest in them. Virtual Items have no real-world monetary value and cannot be exchanged for real money, goods, or services outside the Services.
+      </p>
+      <p>
+        The developer may manage, modify, regulate, remove, or discontinue Virtual Items or game features at any time, with or without notice, where permitted by applicable law.
+      </p>
+
+      <h3>7. Fees, Refunds, and Return Policy</h3>
+      <p>
+        Purchases made through the Services are handled by the applicable app store, payment provider, or platform. All purchases are subject to the rules and refund policies of the platform through which the purchase was made.
+      </p>
+      <p>
+        Except where required by applicable law or platform policy, purchases of Virtual Items or other digital content are final and non-refundable. You are responsible for all charges made through your account, including unauthorized charges if your device, account, or payment method is not properly secured.
+      </p>
+      <p>
+        You acknowledge that you will not receive money or compensation for unused Virtual Items or other game assets if the Services are changed, suspended, terminated, or if your account is closed, except where required by applicable law.
+      </p>
+
+      <h3>8. Prohibited Uses</h3>
+      <p>You are prohibited from violating or attempting to violate the security or integrity of the Services, including but not limited to:</p>
+      <ul>
+        <li>Accessing content, data, servers, or accounts that you are not authorized to access.</li>
+        <li>Testing, scanning, probing, or attempting to breach security or authentication systems.</li>
+        <li>Interfering with service to any user, host, or network.</li>
+        <li>Flooding, spamming, mail bombing, crashing, or overloading the Services.</li>
+        <li>Forging headers or manipulating identifiers.</li>
+        <li>Modifying, reverse engineering, decompiling, disassembling, or attempting to derive source code from the Services.</li>
+        <li>Hosting, emulating, redirecting, intercepting, or providing unauthorized matchmaking or server services.</li>
+      </ul>
+      <p>
+        Any violation of system or network security may result in civil or criminal liability.
+      </p>
+
+      <h3>9. User Content and Communications</h3>
+      <p>
+        If the Services include chat, messages, support forms, user names, profiles, or other communication features, you are responsible for the content you submit or transmit. You agree not to upload, display, transmit, or distribute content that is unlawful, defamatory, obscene, abusive, threatening, infringing, or otherwise harmful.
+      </p>
+      <p>
+        The developer may remove content, restrict communication features, suspend access, or report unlawful activity where appropriate and where permitted by law.
+      </p>
+
+      <h3>10. Limited License to Use the Services</h3>
+      <p>
+        Subject to your compliance with these Terms, the developer grants you a limited, non-exclusive, non-transferable, non-sublicensable, revocable license to access and use the Services for your own personal and non-commercial entertainment purposes.
+      </p>
+      <p>
+        You may not use the Services for commercial purposes, unlawful purposes, or in any way that conflicts with the spirit or intended use of the Services.
+      </p>
+
+      <h3>11. License Limitations</h3>
+      <p>You agree that you will not, under any circumstances:</p>
+      <ul>
+        <li>Use cheats, exploits, automation software, bots, hacks, mods, or unauthorized third-party software.</li>
+        <li>Modify files that are part of the Services without written permission.</li>
+        <li>Attempt to gain unauthorized access to the Services, accounts, servers, computers, or networks connected to the Services.</li>
+        <li>Use security bypasses, unauthorized tools, or modified clients.</li>
+        <li>Encourage or assist any other person in violating these Terms.</li>
+      </ul>
+
+      <h3>12. Suspension and Termination</h3>
+      <p>
+        Without limiting other remedies, the developer may limit, suspend, terminate, modify, or delete your access to the Services if you fail to comply with these Terms, if fraud, cheating, misuse, unlawful activity, or improper use is suspected, or if your use creates legal risk or possible harm to the Services or other users.
+      </p>
+      <p>
+        If your access is terminated or suspended, you may lose access to game progress, Virtual Items, rewards, and other game data, except where otherwise required by applicable law or platform policy.
+      </p>
+
+      <h3>13. Copyright and Intellectual Property</h3>
+      <p>
+        All rights, title, and interest in and to the Services, including game code, gameplay elements, concepts, artwork, graphics, animations, icons, user interface, text, characters, objects, names, audio, effects, documentation, and related materials, are owned by or licensed to the developer and are protected by copyright, trademark, and other intellectual property laws.
+      </p>
+      <p>
+        If you believe that any material connected with the Services infringes your copyright or intellectual property rights, please contact the developer at <a href="mailto:chirag8062@gmail.com">chirag8062@gmail.com</a> with sufficient details to review the issue.
+      </p>
+
+      <h3>14. Alleged Violations</h3>
+      <p>
+        The developer may investigate complaints, abuse reports, suspected infringement, unauthorized use, or other violations of these Terms. Where necessary, access may be limited or terminated, and unlawful activity may be reported to appropriate authorities.
+      </p>
+
+      <h3>15. No Warranties</h3>
+      <p>
+        The Services are provided on an “as is” and “as available” basis. To the maximum extent permitted by law, the developer disclaims all warranties, whether express or implied, including warranties of merchantability, fitness for a particular purpose, non-infringement, availability, uninterrupted operation, error-free operation, or that defects will be corrected.
+      </p>
+      <p>
+        The Services may contain bugs, errors, interruptions, delays, limitations, or other issues. Your use of the Services is at your own risk.
+      </p>
+
+      <h3>16. Limitation of Liability</h3>
+      <p>
+        To the maximum extent permitted by law, the developer shall not be liable for indirect, incidental, consequential, special, punitive, or similar damages, including loss of revenue, profits, data, game progress, Virtual Items, business interruption, or other intangible losses arising from or related to the Services or these Terms.
+      </p>
+      <p>
+        Nothing in these Terms excludes or restricts liability that cannot be excluded or restricted under applicable law.
+      </p>
+
+      <h3>17. Game Data</h3>
+      <p>
+        The Services may create and store electronic game data such as progress, virtual currency, virtual items, statistics, settings, event progress, user identifiers, and other gameplay-related information. You acknowledge that you do not acquire ownership or property rights in any game data.
+      </p>
+      <p>
+        While reasonable efforts may be made to keep game data safe, the developer is not responsible for loss of game data caused by technical issues, device issues, platform issues, user action, updates, termination, or events outside reasonable control, except where required by applicable law.
+      </p>
+
+      <h3>18. Indemnification</h3>
+      <p>
+        You agree to indemnify and hold harmless the developer from claims, losses, liabilities, damages, costs, and expenses arising from your use of the Services, your violation of these Terms, your misuse of the Services, or your infringement of any rights of another person or entity.
+      </p>
+
+      <h3>19. Forums and Communication Features</h3>
+      <p>
+        If the Services include any chat, message board, instant message, support, email, or other communication feature, you agree to use it lawfully and respectfully. Illegal, abusive, threatening, harmful, or infringing communication is prohibited.
+      </p>
+      <p>
+        You understand that information shared in public or semi-public communication areas may be seen by others. You share such information at your own risk.
+      </p>
+
+      <h3>20. Disputes and Governing Law</h3>
+      <p>
+        If a dispute arises, you are encouraged to first contact the developer at <a href="mailto:chirag8062@gmail.com">chirag8062@gmail.com</a> to seek a resolution. These Terms are governed by the applicable laws of India, except where local consumer protection laws require otherwise.
+      </p>
+
+      <h3>21. Severability</h3>
+      <p>
+        If any part of these Terms is found to be invalid, illegal, or unenforceable, the remaining parts will continue in full force and effect.
+      </p>
+
+      <h3>22. Modifications</h3>
+      <p>
+        The developer may revise these Terms, modify the Services, or discontinue any part of the Services at any time. Updated Terms will be effective when posted on this page or made available through the Services, unless otherwise stated.
+      </p>
+
+      <h3>23. Force Majeure</h3>
+      <p>
+        The developer shall not be liable for any delay or failure to perform resulting from causes outside reasonable control, including acts of God, war, terrorism, riots, embargoes, government actions, fire, floods, accidents, strikes, shortages, pandemic, internet failures, platform outages, energy issues, labor issues, or material shortages.
+      </p>
+
+      <h3>24. Acceptance</h3>
+      <p>
+        By using the Services, you acknowledge that you have read these Terms of Service and agree to be bound by them.
+      </p>
+
+      <a class="back-to-top" href="#top">Back to top ↑</a>
+    
+      <a class="page-link" href="privacy-policy.html">View Privacy Policy</a>
+    </section>
+
+    <section class="card" id="contact">
+
+      <h2>Contact</h2>
+      <p>
+        If you have questions about these Terms of Service, this Privacy Policy, copyright issues, privacy requests, or the game, you may contact the developer:
+      </p>
+
+      <div class="meta-grid">
+        <div class="meta-item">
+          <strong>Game / App Name</strong>
+          Cubescapes!
+        </div>
+<div class="meta-item">
+          <strong>Email</strong>
+          <a href="mailto:chirag8062@gmail.com">chirag8062@gmail.com</a>
+        </div>
+</div>
+
+      <a class="back-to-top" href="#top">Back to top ↑</a>
+    
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Chirag Sorathiya. All rights reserved. Cubescapes! is published by an individual developer.
+  </footer>
+</body>
+</html>

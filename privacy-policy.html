@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Privacy Policy for Cubescapes!" />
+  <title>Cubescapes! - Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #f6f8ff;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --primary: #4f46e5;
+      --primary-dark: #312e81;
+      --border: #e5e7eb;
+      --soft: #eef2ff;
+      --warning-bg: #fff7ed;
+      --warning-border: #fed7aa;
+      --warning-text: #7c2d12;
+      --shadow: 0 18px 45px rgba(31, 41, 55, 0.10);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at top left, #dbeafe 0%, transparent 34%),
+        radial-gradient(circle at top right, #ede9fe 0%, transparent 30%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    header {
+      padding: 58px 20px 36px;
+      text-align: center;
+      background: linear-gradient(135deg, #4f46e5, #7c3aed);
+      color: #ffffff;
+    }
+
+    header h1 {
+      margin: 0 0 12px;
+      font-size: clamp(32px, 5vw, 56px);
+      line-height: 1.1;
+      letter-spacing: -0.045em;
+    }
+
+    header p {
+      margin: 8px auto;
+      max-width: 820px;
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 16px;
+    }
+
+    .badges {
+      margin-top: 20px;
+      display: inline-flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 13px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: #ffffff;
+      font-size: 14px;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 12px 20px;
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--primary-dark);
+      background: var(--soft);
+      padding: 10px 16px;
+      border-radius: 999px;
+      font-weight: 700;
+      font-size: 14px;
+      border: 1px solid transparent;
+      transition: all 0.2s ease;
+    }
+
+    nav a:hover {
+      background: var(--primary);
+      color: #ffffff;
+      transform: translateY(-1px);
+    }
+
+    main {
+      max-width: 1120px;
+      margin: 34px auto;
+      padding: 0 20px 56px;
+    }
+
+    .notice {
+      background: var(--warning-bg);
+      border: 1px solid var(--warning-border);
+      color: var(--warning-text);
+      padding: 16px 18px;
+      border-radius: 18px;
+      margin-bottom: 22px;
+      box-shadow: 0 8px 20px rgba(124, 45, 18, 0.06);
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: clamp(22px, 4vw, 42px);
+      margin-bottom: 26px;
+      box-shadow: var(--shadow);
+    }
+
+    h2 {
+      margin: 0 0 18px;
+      color: var(--primary-dark);
+      font-size: clamp(25px, 3vw, 36px);
+      letter-spacing: -0.03em;
+    }
+
+    h3 {
+      margin-top: 30px;
+      margin-bottom: 8px;
+      color: #111827;
+      font-size: 20px;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    ul {
+      padding-left: 22px;
+      margin: 10px 0;
+    }
+
+    li {
+      margin: 7px 0;
+    }
+
+    a {
+      color: var(--primary);
+      word-break: break-word;
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 22px;
+    }
+
+    .meta-item {
+      background: #f9fafb;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 14px 16px;
+    }
+
+    .meta-item strong {
+      display: block;
+      color: #111827;
+      margin-bottom: 2px;
+    }
+
+    .back-to-top {
+      display: inline-block;
+      margin-top: 18px;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 28px 20px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      background: #ffffff;
+      font-size: 14px;
+    }
+
+    @media (max-width: 720px) {
+      header {
+        padding: 44px 16px 28px;
+      }
+
+      main {
+        margin-top: 22px;
+        padding-left: 14px;
+        padding-right: 14px;
+      }
+
+      .card {
+        border-radius: 18px;
+      }
+
+      .meta-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-inner {
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+      }
+
+      nav a {
+        white-space: nowrap;
+      }
+    }
+  
+    .page-link {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 11px 16px;
+      border-radius: 999px;
+      background: var(--primary);
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .page-link:hover {
+      background: var(--primary-dark);
+    }
+</style>
+</head>
+<body>
+  <header id="top">
+<p>Privacy Policy</p>
+    <p>This page explains important information about using Cubescapes!.</p>
+  </header>
+
+  <nav aria-label="Page navigation">
+    <div class="nav-inner">
+      <a href="index.html">Terms of Service</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="card" id="privacy">
+
+      <h2>Privacy Policy</h2>
+
+      <p>
+        This Privacy Policy explains how and why information may be collected, stored, shared, and used when you download, access, play, or otherwise use Cubescapes!, including related mobile game features, support services, advertising, analytics, and other game-related services, collectively referred to as the “Services”.
+      </p>
+
+      <p>
+        Cubescapes! is developed and published by Chirag Sorathiya, an individual developer. In this Privacy Policy, “we”, “us”, and “our” refer to the individual developer/publisher of Cubescapes!.
+      </p>
+
+      <p>
+        Where this Privacy Policy refers to “personal data”, it means information that identifies, relates to, describes, can reasonably be associated with, or could reasonably be linked directly or indirectly with a particular person, device, or household, depending on applicable privacy laws.
+      </p>
+
+      <h3>1. Scope of This Privacy Policy</h3>
+      <p>
+        This Privacy Policy applies to Cubescapes!, related mobile application services, support communication, advertising and analytics activities, and any other Services connected with the game. This Privacy Policy does not apply to third-party websites, services, platforms, advertisements, or stores that are not controlled by us.
+      </p>
+
+      <h3>2. How We Collect Personal Data</h3>
+      <p>
+        We may collect information directly from you, automatically from your device when you use the Services, or from third-party service providers that help operate the game, such as app stores, advertising networks, analytics providers, crash reporting tools, and cloud service providers.
+      </p>
+
+      <h3>3. Personal Data Collected Directly from You</h3>
+      <p>
+        Depending on how you use the Services, we may collect information that you choose to provide, including:
+      </p>
+      <ul>
+        <li><strong>Contact information:</strong> such as your email address, country or region, username, or support contact details when you contact us.</li>
+        <li><strong>User-generated content:</strong> such as files, screenshots, documents, images, videos, messages, feedback, or other information you send through support or communication features.</li>
+        <li><strong>Profile and gameplay information:</strong> such as your screen name, avatar, profile picture, in-game scores, achievements, progress, purchases, rewards, event participation, and game settings.</li>
+        <li><strong>Survey and feedback information:</strong> such as ratings, comments, and responses you provide about the Services.</li>
+        <li><strong>Inferences:</strong> such as information generated from your use of the Services that may reflect preferences, gameplay behavior, or interests.</li>
+        <li><strong>Parental information:</strong> such as a parent or guardian email address or verification information, only where parental controls, consent, or age-related features are used.</li>
+      </ul>
+
+      <h3>4. Information Collected Automatically</h3>
+      <p>
+        When you use the Services, certain information may be collected automatically, including:
+      </p>
+      <ul>
+        <li><strong>Analytics data:</strong> information about how and when you use the game, session activity, feature usage, level progress, ad interactions, diagnostic data, crash logs, and performance information.</li>
+        <li><strong>Device data:</strong> device model, operating system, app version, language, region, unique device identifiers, advertising identifiers such as Android Advertising ID or Apple IDFA where available, Identifier for Vendor where applicable, and similar technical identifiers.</li>
+        <li><strong>Location data:</strong> approximate location based on IP address or device region settings. We do not intend to collect precise GPS location unless a specific feature clearly requires it and permission is requested.</li>
+        <li><strong>Commercial information:</strong> information about in-app purchases, purchased products, purchase history, or other transaction confirmation data provided by the relevant app store or payment provider.</li>
+      </ul>
+
+      <h3>5. Cookies and Similar Technologies</h3>
+      <p>
+        If we operate a website or web-based support page connected with the Services, cookies or similar technologies may be used to provide website functionality, remember preferences, measure performance, understand usage, and support advertising or analytics. Mobile apps may also use SDKs and similar technologies that function like cookies.
+      </p>
+      <p>
+        You can manage cookies through your browser settings. Some features may not work properly if cookies or similar technologies are disabled.
+      </p>
+
+      <h3>6. Personal Data Collected from Third Parties</h3>
+      <p>
+        Most information is collected when you use the Services, but we may also receive limited information from third parties where permitted by law and platform rules.
+      </p>
+
+      <h3>7. App Stores and Payment Providers</h3>
+      <p>
+        If you install the game or make purchases through Google Play, the Apple App Store, or another app store, the relevant platform may provide us with limited information needed to confirm purchases, restore purchases, provide support, and prevent fraud. We do not receive your full credit card number, bank account information, or full payment details.
+      </p>
+
+      <h3>8. Social Media and Authentication Services</h3>
+      <p>
+        If the Services allow you to connect a social media account, game services account, or third-party authentication service, we may receive information that you permit that service to share, such as your name, email address, user ID, profile picture, friends list, or other account information. The information shared depends on your privacy settings and the policies of the third-party service.
+      </p>
+      <p>
+        You can usually disconnect third-party accounts through the settings of the relevant platform or service.
+      </p>
+
+      <h3>9. Other Sources</h3>
+      <p>
+        We may receive information from publicly available sources, analytics providers, advertising partners, brand partnerships, or other third-party service providers where permitted by law.
+      </p>
+
+      <h3>10. Purposes for Processing Personal Data</h3>
+      <p>
+        We may collect and use personal data for the following purposes:
+      </p>
+      <ul>
+        <li>To provide, operate, maintain, and improve the Services.</li>
+        <li>To save gameplay progress, rewards, virtual items, settings, and game state.</li>
+        <li>To personalize your in-game experience, events, offers, and gameplay content.</li>
+        <li>To activate, validate, and restore purchases.</li>
+        <li>To provide player support and respond to questions, comments, or requests.</li>
+        <li>To optimize the game for your device and improve performance.</li>
+        <li>To analyze usage, measure interest, conduct internal research, and improve game quality.</li>
+        <li>To show ads, measure ad performance, support attribution, prevent ad fraud, and provide advertising-related services where applicable.</li>
+        <li>To send service-related notices, technical updates, security alerts, administrative messages, and support responses.</li>
+        <li>To prevent cheating, fraud, abuse, unauthorized access, illegal activity, and violations of our Terms of Service.</li>
+        <li>To maintain the safety, security, and integrity of the Services.</li>
+        <li>To support parental control settings or age-related protections where applicable.</li>
+        <li>To comply with legal obligations, platform requirements, and enforce our rights.</li>
+        <li>For any other purpose described in this Privacy Policy or permitted by law.</li>
+      </ul>
+
+      <h3>11. Disclosure of Personal Data</h3>
+      <p>
+        We may share, disclose, transmit, make available, or provide access to personal data in the following situations:
+      </p>
+      <ul>
+        <li><strong>Other users:</strong> if the Services include public profiles, leaderboards, teams, competitions, chat, or community features, other users may see your screen name, avatar, scores, achievements, or information you choose to make public.</li>
+        <li><strong>Service providers:</strong> we may share data with providers that help with hosting, cloud storage, analytics, advertising, crash reporting, customer support, payment validation, fraud prevention, and technical operations.</li>
+        <li><strong>App stores and platforms:</strong> purchase-related and account-related information may be processed by the app store or platform through which you use the Services.</li>
+        <li><strong>Advertising partners:</strong> if ads are included, ad networks and advertising partners may collect or receive device identifiers, ad interactions, usage data, and similar information to provide ads, attribution, analytics, reporting, and fraud prevention.</li>
+        <li><strong>Survey, promotion, or event providers:</strong> if we offer contests, surveys, sweepstakes, or promotions, data may be shared with providers that help operate those activities.</li>
+        <li><strong>Legal and safety reasons:</strong> we may disclose information to comply with law, legal process, lawful requests, protect rights and property, enforce our Terms, detect or prevent fraud, protect safety, or investigate suspected unlawful activity.</li>
+        <li><strong>With your consent:</strong> we may share information with third parties when you direct us or consent to the sharing.</li>
+        <li><strong>Business transfer:</strong> if the game or related assets are transferred, sold, assigned, or reorganized, information may be transferred as part of that transaction, subject to applicable law.</li>
+      </ul>
+
+      <h3>12. Third-Party Data Collection and Online Advertising</h3>
+      <p>
+        The Services may use third-party advertising companies, ad networks, analytics providers, attribution providers, and social media platforms to serve ads, measure campaigns, understand performance, prevent fraud, and provide more relevant advertising.
+      </p>
+      <p>
+        These partners may collect information from your device through SDKs, cookies, tracking technologies, device identifiers, advertising identifiers, IP address, approximate location, app activity, ad views, ad clicks, and related data. This information may be used for interest-based advertising, attribution, analytics, market research, reporting, and fraud prevention.
+      </p>
+      <p>
+        You can limit or reset your device advertising identifier through your device settings. On Android, you can usually manage this through Settings → Google → Ads. On iOS, you can usually manage tracking permissions through Settings → Privacy &amp; Security → Tracking.
+      </p>
+
+      <h3>13. Control Over Your Information</h3>
+      <p>
+        You may control certain information in the following ways:
+      </p>
+      <ul>
+        <li><strong>Delete or reset the game:</strong> you may uninstall the game from your device. This may remove locally stored data, but data stored by third-party services may follow their own retention rules.</li>
+        <li><strong>Device permissions:</strong> you can manage app permissions through your device settings.</li>
+        <li><strong>Advertising identifier:</strong> you can reset or delete your advertising ID through device settings where available.</li>
+        <li><strong>Push notifications:</strong> if push notifications are used, you can disable them through your device settings.</li>
+        <li><strong>Social accounts:</strong> if you connect a social account, you can disconnect it through the game or the relevant third-party platform settings where available.</li>
+        <li><strong>Support requests:</strong> you may contact us to request review, modification, or deletion of certain information, subject to verification and legal limitations.</li>
+      </ul>
+
+      <h3>14. Your Privacy Rights</h3>
+      <p>
+        Depending on your country, state, or region, you may have certain rights regarding your personal data. These may include:
+      </p>
+      <ul>
+        <li>The right to access personal data we process about you.</li>
+        <li>The right to request correction of inaccurate or incomplete personal data.</li>
+        <li>The right to request deletion of personal data where applicable.</li>
+        <li>The right to request restriction of processing in certain circumstances.</li>
+        <li>The right to object to certain processing activities.</li>
+        <li>The right to data portability where applicable.</li>
+        <li>The right to opt out of targeted advertising, sale, or sharing of personal data where applicable.</li>
+        <li>The right not to receive discriminatory treatment for exercising your privacy rights.</li>
+        <li>The right to withdraw consent where processing is based on consent.</li>
+        <li>The right to appeal a decision where applicable law provides such a right.</li>
+      </ul>
+      <p>
+        To exercise privacy rights, contact us at <a href="mailto:chirag8062@gmail.com">chirag8062@gmail.com</a>. We may need to verify your identity before completing a request. In some cases, we may be unable to fulfill a request if we cannot verify your identity, cannot locate your information, must retain information for legal or security reasons, or need the information to provide the Services.
+      </p>
+
+      <h3>15. Data Deletion Request</h3>
+      <p>
+        You may request deletion of personal data by contacting us at <a href="mailto:chirag8062@gmail.com">chirag8062@gmail.com</a>. Please include enough information to help identify your game account or support request.
+      </p>
+      <p>
+        After receiving a deletion request, we may verify your identity and process the request within a reasonable time, except where retention is required or permitted by law, platform rules, fraud prevention, security, dispute resolution, or legitimate operational needs.
+      </p>
+      <p>
+        If the game does not collect or store personally identifiable account information directly, you may delete locally stored data by uninstalling the app. For advertising identifiers collected by third-party services, you can delete, reset, or limit your advertising ID through your device settings.
+      </p>
+
+      <h3>16. Children</h3>
+      <p>
+        We do not intend to knowingly collect personal data from children under 13, or under the age required by applicable local law, without appropriate parental consent where required. If you believe that a child has provided personal data to us, please contact us at <a href="mailto:chirag8062@gmail.com">chirag8062@gmail.com</a> so we can review and take appropriate action.
+      </p>
+      <p>
+        Where parental control features are available, parents or guardians may use those settings to help manage certain game features.
+      </p>
+
+      <h3>17. International Transfer</h3>
+      <p>
+        Personal data may be processed or stored in countries other than the country where you live, depending on where our service providers, platforms, advertising partners, analytics providers, and technical infrastructure operate. These countries may have data protection laws different from those in your location.
+      </p>
+      <p>
+        Where required by applicable law, reasonable steps will be taken to ensure personal data is handled securely and lawfully, including use of appropriate safeguards such as contractual protections.
+      </p>
+
+      <h3>18. Security</h3>
+      <p>
+        Reasonable technical and organizational measures are used to help protect personal data. However, no server, computer system, communication network, internet transmission, or electronic storage method can be guaranteed to be completely secure.
+      </p>
+      <p>
+        If we become aware of a security issue affecting your information, we may notify you electronically, through the Services, by email, or by other appropriate means where required by law.
+      </p>
+
+      <h3>19. Legal Bases for EEA, UK, and Swiss Users</h3>
+      <p>
+        If you are located in the European Economic Area, the United Kingdom, or Switzerland, we process personal data only where we have a legal basis under applicable law. These legal bases may include:
+      </p>
+      <ul>
+        <li><strong>Contractual necessity:</strong> to provide the Services you request, such as gameplay, purchase validation, support, and connected features.</li>
+        <li><strong>Legal obligation:</strong> to comply with applicable laws, tax rules, valid legal requests, or platform obligations.</li>
+        <li><strong>Legitimate interests:</strong> to improve, secure, analyze, advertise, and operate the Services in ways that are not overridden by your rights and interests.</li>
+        <li><strong>Consent:</strong> where consent is required, such as certain advertising, tracking, or device data processing activities.</li>
+      </ul>
+      <p>
+        Where processing is based on consent, you may withdraw consent at any time using available settings or by contacting us, without affecting the lawfulness of processing before withdrawal.
+      </p>
+
+      <h3>20. Third-Party Websites and Services</h3>
+      <p>
+        The Services may contain links to third-party websites, advertisements, plug-ins, SDKs, platforms, or services. This Privacy Policy does not apply to third-party services that are not controlled by us. Please review the privacy policies of those third parties to understand their data practices.
+      </p>
+
+      <h3>21. Retention</h3>
+      <p>
+        We retain personal data for as long as needed to provide the Services, maintain game progress, provide support, prevent fraud or abuse, comply with legal obligations, resolve disputes, enforce agreements, and support legitimate operational needs.
+      </p>
+      <p>
+        If you request deletion, some information may still be retained where required or permitted by law, security needs, fraud prevention, platform requirements, or dispute resolution.
+      </p>
+
+      <h3>22. Changes to This Privacy Policy</h3>
+      <p>
+        We may update this Privacy Policy from time to time. Any updated version will be posted on this page or made available through the Services. Continued use of the Services after an updated Privacy Policy is posted means you accept the updated Privacy Policy.
+      </p>
+
+      <h3>23. Contact Us</h3>
+      <p>
+        For questions, privacy requests, data deletion requests, support, or concerns about this Privacy Policy, contact us at:
+        <a href="mailto:chirag8062@gmail.com">chirag8062@gmail.com</a>
+      </p>
+
+      <a class="back-to-top" href="#top">Back to top ↑</a>
+    
+      <a class="page-link" href="index.html">View Terms of Service</a>
+    </section>
+
+    <section class="card" id="contact">
+
+      <h2>Contact</h2>
+      <p>
+        If you have questions about these Terms of Service, this Privacy Policy, copyright issues, privacy requests, or the game, you may contact the developer:
+      </p>
+
+      <div class="meta-grid">
+        <div class="meta-item">
+          <strong>Game / App Name</strong>
+          Cubescapes!
+        </div>
+<div class="meta-item">
+          <strong>Email</strong>
+          <a href="mailto:chirag8062@gmail.com">chirag8062@gmail.com</a>
+        </div>
+</div>
+
+      <a class="back-to-top" href="#top">Back to top ↑</a>
+    
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Chirag Sorathiya. All rights reserved. Cubescapes! is published by an individual developer.
+  </footer>
+</body>
+</html>
